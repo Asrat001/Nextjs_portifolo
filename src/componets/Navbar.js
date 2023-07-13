@@ -27,8 +27,8 @@ function Navbar() {
       <nav className=" space-x-4 ">
         <CustomLink href="/" title={"Home"}/> 
         <CustomLink href="/about" title={ "About"}/>
-        <CustomLink href="/blog" title={"Projects"}/> 
-        <CustomLink href="/projects" title={"Blog"}/>
+        <CustomLink href="/project" title={"Projects"}/> 
+        <CustomLink href="/blog" title={"Blog"}/>
       </nav>
      
       <nav className="flex items-center justify-center  flex-wrap" >

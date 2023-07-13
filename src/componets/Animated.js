@@ -41,7 +41,7 @@ function Animated({text , className=''}) {
             <motion.span key={word+"-"+indexedDB} className='  inline-block'
              variants={sword} 
             >
-             {word}&nbsp;
+             {word}&nbsp;&nbsp;
             </motion.span>
         )
        }
