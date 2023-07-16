@@ -13,16 +13,17 @@ module.exports = {
        
       },
       colors:{
-        dark: "#1b1b1b",
-        light: "#f5f5f5",
+        dark: "#CABBC1",
+        light: "#021504",
         primary: "#B63E96", // 240,86,199
-        primaryDark: "#58E6D9", // 80,230,217
+        primaryDark: "#58E6D9",
+        h1text:"#62B600" // 80,230,217
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite',
       },
      backgroundImage: {
-      circularLight:"repeating-radial-gradient(rgb(0,0,0,0.4) 2px, #f5f5f5 ,5px ,#f5f5f5 100px)"
+      circularLight:"repeating-radial-gradient(rgb(0,0,0,0.4) 2px, #f5f5f5 ,5px ,#021504 100px)"
     },
   }
 

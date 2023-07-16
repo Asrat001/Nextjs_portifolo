@@ -17,7 +17,7 @@ transition={{duration:1.5}}
 function Skills() {
   return (
     <div>
-        <h1 className=' font-bold text-8xl mt-64 w-full text-center'>Skill</h1>
+        <h1 className=' font-bold text-8xl mt-64 w-full text-center text-h1text'>Skill</h1>
         <div className='w-full  h-screen relative  flex  items-center  justify-center rounded-full bg-circularLight'>
             <div className='flex justify-center items-center  rounded-full  font-semibold  bg-dark  text-light p-8 shadow-dark'>
                 web 
@@ -32,6 +32,9 @@ function Skills() {
                 <Skill name="Web Design" x="32vw" y="-5vw" />
                 <Skill name="Figma  " x="0vw" y="-20vw" />
                 <Skill name="Firebase" x="-25vw" y="18vw" />
+                <Skill name="React Native" x="-1vw" y="18vw" />
+                <Skill name="Flutter" x="-30vw" y="13vw" />
+                <Skill name="Mongodb" x="-29vw" y="-16vw" />
             
         </div>
      

@@ -23,8 +23,9 @@ export const TwitterIcon = ({ className, ...rest }) => (
     width="1em"
     height="1em"
     viewBox="0 0 256 209"
+    
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-full h-auto  ${className}`}
   >
     <path fill="none" d="M0 0h256v209H0z" />
     <path

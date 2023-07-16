@@ -13,7 +13,7 @@ const CustomLink = ({href,title, className=""})=>{
 
     const router = useRouter();
     return (
-        <Link href={href} className=" relative group  text-[18px]">
+        <Link href={href} className=" relative group  text-[18px] text-dark">
             {title}
             <span className={`h-[2px] bg-dark  inline-block  absolute  left-0 -bottom-0.5  group-hover:w-full transition-[width] duration-300 ${router.asPath===href ? 'w-full':'w-0'}`}>
             
@@ -37,25 +37,25 @@ function Navbar() {
        whileTap={{scale:0.8}}
        className="w-6 mx-3"
        >
-        <TwitterIcon />
+        <TwitterIcon className=" text-h1text"/>
        </motion.a>
        <motion.a href='/' target={"_blank"}
          whileHover={{y:-3}}
          whileTap={{scale:0.8}}
          className="w-6 mx-3">
-        <GithubIcon/>
+        <GithubIcon className=" text-h1text"/>
        </motion.a>
        <motion.a href='/' target={"_blank"}
          whileHover={{y:-3}}
          whileTap={{scale:0.8}}
          className="w-6 mx-3">
-        <DribbbleIcon/>
+        <DribbbleIcon className=" text-h1text"/>
        </motion.a>
        <motion.a href='/' target={"_blank"}
          whileHover={{y:-3}}
          whileTap={{scale:0.8}} 
          className="w-6 mx-3">
-        <LinkedInIcon/>
+        <LinkedInIcon className=" text-h1text"/>
         </motion.a>
       
       </nav>

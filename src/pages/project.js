@@ -5,25 +5,26 @@ import React, { useRef } from "react";
 import {motion, useScroll } from "framer-motion";
 import Project from '@/componets/project';
 import {GithubIcon } from '@/componets/Icons';
+import Effect from '@/componets/Effect';
 
 
 
  const Card= ({title,disc,glink,dlink, stack})=>{
-   return <div className=' bg-white w-[600px] h-auto border-dark/40 border-[2px]  rounded-lg p-4'>
+   return <div className=' bg-light/5 w-[600px] h-auto border-dark/40 border-[2px]  rounded-lg p-4'>
            <p className=' text-dark font-semibold'> {title} </p>
            <p className=' text-dark/75 my-2'> {disc}</p>
            <div className='flex justify-between items-center p-4'>
-             <a href={dlink} className=' underline underline-offset-2 font-semibold'> Visit project </a>
+             <a href={dlink} className=' underline underline-offset-2 font-semibold  text-dark'> Visit project </a>
              <a href={glink}target='_blank' className='w-16 h-auto p-3 rounded-xl bg-dark text-light flex justify-center items-center '>
              <div className='w-6'>
-             <GithubIcon className=" animate-pulse"/>
+             <GithubIcon className=" " />
              </div>
         
           </a>
        
            </div>
            <div className=' flex items-center space-x-2'>
-         <p className=' text-primary  font-medium'>{stack}&nbsp;</p>
+         <p className=' text-h1text/60  font-medium'>{stack}&nbsp;</p>
         
              </div>
           </div>
@@ -42,9 +43,13 @@ function project() {
         <title>projects</title>
         <meta name="asrat adane" content="any discription" />
        </Head>
- <main className=' w-full  mb-16  flex  flex-col  items-center  justify-center'>
-    <Layout className="pt-16  !px-0">
-     <Animated text="My Projects!"/>
+       <Effect/>
+ <main className=' w-full  mb-16  flex  flex-col  items-center  justify-center ' ref={ref}>
+    <Layout className="pt-16  !px-0" >
+     <Animated text="My Projects!" className=' text-h1text'/>
+     <motion.div 
+     style={{scaleY:scrollYProgress}}
+     className='w-1 h-full absolute top-[45%] left-[50%] bg-dark'/>
     
       <div className=' grid grid-cols-2 justify-items-center mt-16 py-4 px-16  gap-32'>
   <div className=' space-y-4 '>

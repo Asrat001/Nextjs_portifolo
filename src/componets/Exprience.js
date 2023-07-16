@@ -12,12 +12,12 @@ const Detail = ({ position, company, companyLink, time, address, work }) => {
       whileInView={{y:0}}
       transition={{duration:0.5}}
       >
-        <h3 className=" capitalize  font-bold text-2xl ">
-          {position}&nbsp; <a href={companyLink} className=" capitalize text-primary">@{company}</a>   </h3>
+        <h3 className=" capitalize  font-bold text-2xl  text-h1text">
+          {position}&nbsp; <a href={companyLink} className=" capitalize text-dark">@{company}</a>   </h3>
           <span className=" capitalize font-medium text-dark/75">
             {time}|{address}
           </span>
-          <p className=" font-medium  w-full ">{work}</p>
+          <p className=" font-medium  w-full text-dark ">{work}</p>
       
       </motion.div>
     </li>
@@ -33,11 +33,11 @@ function Exprience() {
   });
   return (
     <div className="my-64 ">
-      <h1 className=" text-center text-8xl font-bold mt-4 w-full mb-32">
+      <h1 className=" text-center text-8xl font-bold mt-4 w-full mb-32 text-h1text">
         Experience
       </h1>
       <div ref={ref} className="w-[75%] mx-auto  relative">
-        < motion.div className=" absolute left-9 top-0 origin-top w-[4px] h-full bg-dark"
+        < motion.div className=" absolute left-9 top-0 origin-top w-[4px] h-full bg-h1text"
         style={{scaleY:scrollYProgress}}
         />
         <ul className=" flex flex-col items-start  justify-between ml-4">

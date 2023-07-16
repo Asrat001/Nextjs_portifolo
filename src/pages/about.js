@@ -8,6 +8,7 @@ import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skill from "@/componets/Skill";
 import Exprience from "@/componets/Exprience";
 import Education from "@/componets/Education";
+import Effect from "@/componets/Effect";
 
 
 const Animatednum = ({value}) => {
@@ -28,7 +29,7 @@ const Animatednum = ({value}) => {
         }
       })
         },[springValue,value])
-     return <span ref={ref}>
+     return <span ref={ref} className=" text-h1text">
          
      </span>
 };
@@ -40,6 +41,7 @@ function about() {
         <title>about me</title>
         <meta name="asrat adane" content="any discription" />
       </Head>
+      <Effect/>
       <main className="flex  w-full flex-col  items-center justify-center">
         <Layout className={"p-16"}>
          
@@ -48,7 +50,7 @@ function about() {
               <h1 className="mb-4 text-lg uppercase  font-bold  text-dark/75">
                 about me
               </h1>
-              <p className=" font-medium ">
+              <p className=" font-medium text-dark ">
                 Hi, I'm  a web developer and UI/UX designer with a
                 passion for creating beautiful, functional, and user-centered
                 digital experiences. With 3 years of coding experience in the
@@ -106,19 +108,19 @@ function about() {
             </div>
             <div className=" col-span-2 flex flex-col items-end justify-between">
                 <div className=" flex  flex-col  items-end justify-center">
-                    <span className=" inline-block text-7xl font-bold">
+                    <span className=" inline-block text-7xl font-bold  text-h1text">
                     <Animatednum value={10}/>+
                     </span>
                     <h1 className=" capitalize text-dark/75  text-xl font-medium">  Satisfied clients</h1>
                 </div>
                 <div className=" flex  flex-col  items-end justify-center">
-                    <span className="inline-block text-7xl font-bold">
+                    <span className="inline-block text-7xl font-bold  text-h1text">
                     <Animatednum value={20}/>+
                     </span>
                     <h1 className=" capitalize text-dark/75  text-xl font-medium"> Project complited</h1>
                 </div>
                 <div className=" flex  flex-col  items-end justify-center">
-                    <span className="inline-block text-7xl font-bold">
+                    <span className="inline-block text-7xl font-bold text-h1text">
                          <Animatednum value={3}/>+
                     </span>
                     <h1 className=" capitalize text-dark/75  text-xl font-medium"> year of expriance</h1>
